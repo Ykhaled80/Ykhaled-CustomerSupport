@@ -7,16 +7,17 @@ public class Ticket {
     private String customerName;
     private String subject;
     private String body;
-    private List <Attachment>attachments;
+    private List<Attachment> attachments;
 
     public Ticket() {
+        this.attachments = new ArrayList<>();
     }
 
-    public Ticket(String customerName, String subject, String body, List<Attachment> attachments) {
+    public Ticket(String customerName, String subject, String body) {
         this.customerName = customerName;
         this.subject = subject;
         this.body = body;
-        attachments = new ArrayList<>();
+        this.attachments = new ArrayList<>();
     }
 
     public String getCustomerName() {
@@ -45,6 +46,10 @@ public class Ticket {
 
     public List<Attachment> getAttachments() {
         return attachments;
+    }
+
+    public void setAttachments(List<Attachment> attachments) {
+        this.attachments = attachments;
     }
 
     public void addAttachment(Attachment attachment) {
