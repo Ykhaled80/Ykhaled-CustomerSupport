@@ -8,15 +8,18 @@ public class Ticket {
     private String subject;
     private String body;
     private List<Attachment> attachments;
-
-    public Ticket() {
-        this.attachments = new ArrayList<>();
-    }
-
-    public Ticket(String customerName, String subject, String body) {
+    private Attachment attachment;
+    public Ticket(String customerName, String subject, String body, List<Attachment> attachments, Attachment attachment) {
         this.customerName = customerName;
         this.subject = subject;
         this.body = body;
+        this.attachments = attachments;
+        this.attachment = attachment;
+    }
+
+
+
+    public Ticket() {
         this.attachments = new ArrayList<>();
     }
 
@@ -52,7 +55,29 @@ public class Ticket {
         this.attachments = attachments;
     }
 
+    public Attachment getAttachment() {
+        return attachment;
+    }
+
+    public void setAttachment(Attachment attachment) {
+        this.attachment = attachment;
+    }
+
+    public boolean hasAttachment(){
+        return attachment.getName().length() > 0 && attachment.getContents().length > 0;
+    }
+
     public void addAttachment(Attachment attachment) {
         attachments.add(attachment);
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "customerName='" + customerName + '\'' +
+                ", subject='" + subject + '\'' +
+                ", body='" + body + '\'' +
+                ", attachments=" + attachments +
+                '}';
     }
 }
