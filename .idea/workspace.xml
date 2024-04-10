@@ -9,19 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abf915cf-ac5e-4df0-a7e5-07f86fbc376e" name="Changes" comment="3rd commit (Servlet class done )">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/ticketForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/Attachment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/TicketServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="abf915cf-ac5e-4df0-a7e5-07f86fbc376e" name="Changes" comment="1st commit all java converted to  EL and JSTL" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +181,7 @@
       <workItem from="1711839566927" duration="2665000" />
       <workItem from="1711842877774" duration="26960000" />
       <workItem from="1712183636827" duration="20299000" />
-      <workItem from="1712765369725" duration="14434000" />
+      <workItem from="1712765369725" duration="14803000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit (POJO completed)">
       <option name="closed" value="true" />
@@ -219,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712195328388</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1st commit all java converted to  EL and JSTL">
+      <option name="closed" value="true" />
+      <created>1712780936291</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712780936291</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +232,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Ykhaled" />
                       </list>
                     </value>
                   </entry>
@@ -252,6 +248,7 @@
     <MESSAGE value="1st commit (POJO completed)" />
     <MESSAGE value="2nd commit (test class )" />
     <MESSAGE value="3rd commit (Servlet class done )" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commit (Servlet class done )" />
+    <MESSAGE value="1st commit all java converted to  EL and JSTL" />
+    <option name="LAST_COMMIT_MESSAGE" value="1st commit all java converted to  EL and JSTL" />
   </component>
 </project>
