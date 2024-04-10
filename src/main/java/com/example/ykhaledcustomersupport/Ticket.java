@@ -1,9 +1,10 @@
 package com.example.ykhaledcustomersupport;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ticket {
+public class Ticket implements Serializable {
     private String customerName;
     private String subject;
     private String body;
