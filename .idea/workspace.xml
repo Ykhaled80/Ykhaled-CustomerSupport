@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abf915cf-ac5e-4df0-a7e5-07f86fbc376e" name="Changes" comment="1st commit all java converted to  EL and JSTL" />
+    <list default="true" id="abf915cf-ac5e-4df0-a7e5-07f86fbc376e" name="Changes" comment="1st commit all java converted to  EL and JSTL">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +183,7 @@
       <workItem from="1711839566927" duration="2665000" />
       <workItem from="1711842877774" duration="26960000" />
       <workItem from="1712183636827" duration="20299000" />
-      <workItem from="1712765369725" duration="15748000" />
+      <workItem from="1712765369725" duration="17217000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit (POJO completed)">
       <option name="closed" value="true" />
