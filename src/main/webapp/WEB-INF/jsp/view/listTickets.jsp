@@ -3,6 +3,10 @@
     <title>Ticket List</title>
 </head>
 <body>
+<a href="<c:url value='/login'>
+<c:param name='logout'/>
+</c:url>">Log Out</a>
+
 <h2>Ticket List</h2>
 <a href="<c:url value='/ticket'>
         <c:param name='action' value='createTicket' />
