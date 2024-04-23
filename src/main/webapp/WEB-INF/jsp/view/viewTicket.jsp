@@ -7,9 +7,9 @@
 <c:param name='logout'/>
 </c:url>">Log Out</a>
 <h2>Ticket: <c:out value ="${ticketId}"/></h2>
-<h3><c:out value="${ticket.getCustomerName()}" /></h3>
-<P>Subject: <c:out value="${ticket.getSubject()}"/></P>
-<p>Description: <c:out value="${ticket.getBody()}"/><p/>
+<h3><c:out value="${ticket.customerName}" /></h3>
+<P>Subject: <c:out value="${ticket.subject}"/></P>
+<p>Description: <c:out value="${ticket.body}"/><p/>
 
 <c:if test="${ticket.hasAttachment()}">
     <a href="<c:url value='/ticket'>

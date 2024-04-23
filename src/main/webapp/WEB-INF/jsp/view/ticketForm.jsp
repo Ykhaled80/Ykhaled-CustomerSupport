@@ -8,18 +8,19 @@
 <c:param name='logout'/>
 </c:url>">Log Out</a>
     <h2>Create a Ticket</h2>
-    <form method="POST" action="ticket" enctype="multipart/form-data">
-        <input type="hidden" name="action" value="create">
-        Customer Name:<br>
-        <input type="text" name="customerName"><br><br>
-        Subject:<br>
-        <input type="text" name="subject"><br><br>
-        Body:<br>
-        <textarea name="body" rows="25" cols="100"></textarea><br><br>
-        <b>File</b><br>
-        <input type="file" name="file1"><br><br>
+
+    <form:form method="post" action="create" modelAttribute="ticket" enctype="multipart/form-data">
+        <form:label path="customeName">Customer Name:</form:label><br>
+        <form:input path="customerName"/><br><br>
+        <form:label path="subject">Subject:</form:label><br>
+        <form:input path="subject"/><br><br>
+        <form:label path="body">Description:</form:label><br>
+        <form:textarea path="body" rows="25" cols="100"/><br><br>
+        <b>File</b>
+        <input type="file" path="attachment"><br><br>
         <input type="submit" value="Submit">
-    </form>
+
+    </form:form>
 
 </body>
 </html>
