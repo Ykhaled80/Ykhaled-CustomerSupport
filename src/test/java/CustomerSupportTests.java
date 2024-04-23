@@ -1,7 +1,9 @@
-import com.example.ykhaledcustomersupport.Attachment;
-import com.example.ykhaledcustomersupport.Ticket;
+import com.example.ykhaledcustomersupport.site.Attachment;
+import com.example.ykhaledcustomersupport.site.Ticket;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CustomerSupportTests {
 

@@ -1,7 +1,5 @@
 package com.example.ykhaledcustomersupport.site;
 
-import com.example.ykhaledcustomersupport.Attachment;
-import com.example.ykhaledcustomersupport.Ticket;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +9,6 @@ import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -56,7 +53,7 @@ public class TicketController {
     public ModelAndView viewTicket (Model model, @PathVariable("ticketId")int ticketId){
         Ticket ticket = ticketDB.get(ticketId);
         if (ticket==null){
-            return new ModelAndView(new RedirectView("listTickets",true,false));
+            return new ModelAndView(new RedirectView("ticket/list",true,false));
         }
         model.addAttribute("ticketId",ticketId);
         model.addAttribute("ticket", ticket);
@@ -74,8 +71,8 @@ public class TicketController {
             return new RedirectView("listTickets",true,false);
         }
         return new DownloadView(attachment.getName(), attachment.getContents());
-        //
     }
+
     public static class TicketForm{
         private String customerName;
         private String subject;

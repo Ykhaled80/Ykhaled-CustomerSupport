@@ -10,7 +10,6 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Map;
-@WebServlet(name = "loginServlet", value = "/login")
 public class LoginServlet extends HttpServlet {
 
     public static final Map<String, String> userDB = new Hashtable<>();
