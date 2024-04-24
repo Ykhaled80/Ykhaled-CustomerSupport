@@ -2,7 +2,7 @@
 <head>
     <title>Ticket Session Admin View</title>
 </head>
-<body>
+<body style="background-color: burlywood">
 <a href="<c:url value='/logout'/>">Log Out</a>
 <h2>Sessions</h2>
 The total number of active sessions: <c:out value="${numSessions}"/>

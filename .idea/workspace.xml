@@ -10,27 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abf915cf-ac5e-4df0-a7e5-07f86fbc376e" name="Changes" comment="Part 1: Add Configurations&#10;Part 2: Convert Servlets to Controllers&#10;Convert the index.jsp to IndexController&#10;Convert the TicketServlet to TicketController&#10;Use a form object for the ticket&#10;Create a download view for the attachments&#10;Task above completed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/SessionListController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/SignupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/Attachment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/SessionListServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/SessionListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/SessionListUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/SessionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/SessionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/TicketServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/config/ServletContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/config/ServletContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/SignupServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/sessions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/sessions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/ticketForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/ticketForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CustomerSupportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomerSupportTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +199,7 @@
       <workItem from="1711842877774" duration="26960000" />
       <workItem from="1712183636827" duration="20299000" />
       <workItem from="1712765369725" duration="38795000" />
-      <workItem from="1713815840206" duration="33234000" />
+      <workItem from="1713815840206" duration="52937000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit (POJO completed)">
       <option name="closed" value="true" />

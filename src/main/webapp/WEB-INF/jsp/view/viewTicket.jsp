@@ -2,7 +2,7 @@
 <head>
     <title>Ticket Details</title>
 </head>
-<body>
+<body style="background-color: burlywood">
 <a href="<c:url value='/logout'/>">Log Out</a>
 <h2>Ticket Detail:</h2>
 <h2>Ticket: <c:out value ="${ticketId}"/></h2>
