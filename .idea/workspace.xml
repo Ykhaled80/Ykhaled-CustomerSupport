@@ -10,18 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abf915cf-ac5e-4df0-a7e5-07f86fbc376e" name="Changes" comment="Part 1: Add Configurations&#10;Part 2: Convert Servlets to Controllers&#10;Convert the index.jsp to IndexController&#10;Convert the TicketServlet to TicketController&#10;Use a form object for the ticket&#10;Create a download view for the attachments&#10;Task above completed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/SignupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/entities/TicketEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/entities/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AttachmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/DefaultAttachmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/DefaultAuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/DefaultTicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/DefaultUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/DefautTicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/GenericBaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/GenericJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/GenericRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/UserPrincipalRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/SignupServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/config/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/config/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/config/RootContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/config/RootContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/entities/Attachment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/SessionListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/SessionListUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ykhaledcustomersupport/site/TicketController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/sessions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/sessions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/ticketForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/ticketForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomerSupportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomerSupportTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +83,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -87,7 +107,7 @@
     "Tomcat Server.Tomcat 10.1.19.executor": "Run",
     "git-widget-placeholder": "Ykhaled",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/youss/Downloads/BlogWebApp(Ver4)",
+    "last_opened_file_path": "C:/Users/youss/Downloads/BlogWebApp(Ver5) (1)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -199,7 +219,12 @@
       <workItem from="1711842877774" duration="26960000" />
       <workItem from="1712183636827" duration="20299000" />
       <workItem from="1712765369725" duration="38795000" />
-      <workItem from="1713815840206" duration="52937000" />
+      <workItem from="1713815840206" duration="52979000" />
+      <workItem from="1714592196081" duration="724000" />
+      <workItem from="1714846213918" duration="1588000" />
+      <workItem from="1714851575807" duration="28506000" />
+      <workItem from="1714936043776" duration="17785000" />
+      <workItem from="1714954030912" duration="27081000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit (POJO completed)">
       <option name="closed" value="true" />

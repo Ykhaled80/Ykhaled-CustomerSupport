@@ -1,27 +1,29 @@
 package com.example.ykhaledcustomersupport.site;
 
+import com.example.ykhaledcustomersupport.entities.Attachment;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ticket implements Serializable {
+    private long id;
     private String customerName;
     private String subject;
     private String body;
     private List<Attachment> attachments;
     private Attachment attachment;
-    public Ticket(String customerName, String subject, String body, List<Attachment> attachments, Attachment attachment) {
-        this.customerName = customerName;
-        this.subject = subject;
-        this.body = body;
-        this.attachments = attachments;
-        this.attachment = attachment;
-    }
-
-
 
     public Ticket() {
         this.attachments = new ArrayList<>();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getCustomerName() {
@@ -52,9 +54,6 @@ public class Ticket implements Serializable {
         return attachments;
     }
 
-    public void setAttachments(List<Attachment> attachments) {
-        this.attachments = attachments;
-    }
 
     public Attachment getAttachment() {
         return attachment;

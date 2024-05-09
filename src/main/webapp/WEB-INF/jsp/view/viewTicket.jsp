@@ -8,7 +8,7 @@
 <h2>Ticket: <c:out value ="${ticketId}"/></h2>
 <h3><c:out value="${ticket.customerName}" /></h3>
 <P>Subject: <c:out value="${ticket.subject}"/></P>
-<p>Description: <c:out value="${ticket.body}"/><p/>
+<p>Description: <c:out value="${ticket.body}"/></p>
 
 <c:if test="${ticket.hasAttachment()}">
     <a href="<c:url value='/ticket/${ticketId}/attachment/${ticket.attachment.name}'/>">

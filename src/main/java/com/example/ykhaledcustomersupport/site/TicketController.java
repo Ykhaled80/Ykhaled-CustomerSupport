@@ -1,5 +1,7 @@
 package com.example.ykhaledcustomersupport.site;
 
+import com.example.ykhaledcustomersupport.entities.Attachment;
+import jakarta.inject.Inject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -9,20 +11,25 @@ import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @Controller
 @RequestMapping("ticket")
 public class TicketController {
-    private volatile int TICKET_ID = 1;
-    private Map<Integer, Ticket> ticketDB = new LinkedHashMap<>();
+    //private volatile int TICKET_ID = 1;
+    //private Map<Integer, Ticket> ticketDB = new LinkedHashMap<>();
 
-    @RequestMapping(value = { "list",""})
-    public String ListTickets(Model model){
-        model.addAttribute("ticketDatabase",ticketDB);
+    private static final Logger LOGGER = Logger.getLogger(TicketController.class.getName());
+
+    @Inject
+    TicketService ticketService;
+    @RequestMapping(value = { "list", "" })
+    public String listTickets(Model model) {
+        model.addAttribute("ticketDatabase", ticketService.getAllTickets());
         return "listTickets";
     }
+
 
     @GetMapping("create")
     public ModelAndView createTicket(){
@@ -34,6 +41,7 @@ public class TicketController {
         ticket.setCustomerName(form.getCustomerName());
         ticket.setSubject(form.getSubject());
         ticket.setBody(form.getBody());
+
         MultipartFile file = form.getAttachment();
         Attachment attachment = new Attachment();
         attachment.setName(file.getOriginalFilename());
@@ -42,16 +50,13 @@ public class TicketController {
                 (attachment.getContents()!=null) || attachment.getContents().length > 0)){
             ticket.setAttachment(attachment);
         }
-        int id;
-        synchronized (this) {
-            id = this.TICKET_ID++;
-            ticketDB.put(id, ticket);
-        }
-        return new RedirectView("view/"+id,true,false);
+        ticketService.save(ticket);
+        LOGGER.log(Level.INFO, "Ticket saved: {0}", ticket);
+        return new RedirectView("view/"+ticket.getId(),true,false);
     }
     @GetMapping("view/{ticketId}")
     public ModelAndView viewTicket (Model model, @PathVariable("ticketId")int ticketId){
-        Ticket ticket = ticketDB.get(ticketId);
+        Ticket ticket = ticketService.getTicket(ticketId);
         if (ticket==null){
             return new ModelAndView(new RedirectView("ticket/list",true,false));
         }
@@ -62,7 +67,7 @@ public class TicketController {
     }
     @GetMapping("/{ticketId}/attachment/{attachment:.+}")
     public View downloadImage(@PathVariable("ticketId")int ticketId, @PathVariable("attachment")String name){
-        Ticket ticket = ticketDB.get(ticketId);
+        Ticket ticket = ticketService.getTicket(ticketId);
         if (ticket == null ){
             return new RedirectView("listTickets",true, false);
         }

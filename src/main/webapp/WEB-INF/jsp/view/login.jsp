@@ -13,11 +13,13 @@
         <b style="color: red; font-size: 22px;"><c:out value="The username or password you entered are incorrect, Please try again."></c:out></b><br><br>
     </c:if>
     <a href="<c:url value='/signup'/>" style="font-size: 18px;">Sign Up</a><br><br>
-    <form method="post" action="<c:url value='/login'/>">
-        Username: <input type="text" name="username" value="${loginForm.username}"><br><br>
-        Password: <input type="password" name="password" value="${loginForm.password}"><br><br>
-        <input type="submit" value="Log In" style="font-size: 22px;">
-    </form>
+    <form:form method="POST" action="login" modelAttribute="loginForm">
+        <form:label path="username">Username:&nbsp;</form:label>
+        <form:input path="username"/><br><br>
+        <form:label path="password">Password:&nbsp;</form:label>
+        <form:password path="password"/><br><br>
+        <input type="submit" value="Log In">
+    </form:form>
 </div>
 </body>
 </html>

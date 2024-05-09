@@ -1,4 +1,4 @@
-import com.example.ykhaledcustomersupport.site.Attachment;
+import com.example.ykhaledcustomersupport.entities.Attachment;
 import com.example.ykhaledcustomersupport.site.Ticket;
 import org.junit.jupiter.api.Test;
 
